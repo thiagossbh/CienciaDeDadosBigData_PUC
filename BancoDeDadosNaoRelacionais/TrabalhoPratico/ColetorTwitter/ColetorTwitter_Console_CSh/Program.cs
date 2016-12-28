@@ -16,10 +16,10 @@ namespace ColetorTwitter_Console_CSh
             try
             {
                 /*Dados para autenticação no twitter*/
-                string consumerKey = "iyq5yC3PiWlcyMkxxJuNutJ3r";
-                string consumerSecret = "GPsd0cY0Y3KPneqgut1RFSZhuLoNMMXEyjSe55A5obE5xnsHZS";
-                string userAccessToken = "132473669-aD9Mj9X8QcgT6rnIKcsIqdmsIUgw1WjF7LMPdiDm";
-                string userAccessTokenSecret = "GGLjyjYh3CIUH7zFQRsh31SDXOrIHMS6pMe0J961wUyno";
+                string consumerKey = "add";
+                string consumerSecret = "add";
+                string userAccessToken = "add";
+                string userAccessTokenSecret = "add";
                 Auth.SetUserCredentials(consumerKey, consumerSecret, userAccessToken, userAccessTokenSecret);
 
                 /*Nome do servidor, base e coleção do MongoDB onde os dados serão armazenados*/
@@ -37,17 +37,21 @@ namespace ColetorTwitter_Console_CSh
                 var stream = Stream.CreateFilteredStream();
 
                 /*Adição das plavras chave para busca dos twetts*/
-                stream.AddTrack("natal");
-                stream.AddTrack("feliz natal");
-                stream.AddTrack("ano novo");
-                stream.AddTrack("reveillon");
-                stream.AddTrack("virada do ano");
-                stream.AddTrack("feliznatal");
-                stream.AddTrack("showdavirada");
-                stream.AddTrack("show da virada");
-                stream.AddTrack("retrospectiva 2016");
-                stream.AddTrack("retrospectiva2016");
-                
+                stream.AddTrack("moto");
+                stream.AddTrack("motocicleta");
+                stream.AddTrack("motociclista");
+                stream.AddTrack("motoboy");
+                stream.AddTrack("viagem de moto");
+                stream.AddTrack("honda");
+                stream.AddTrack("yamaha");
+                stream.AddTrack("kawasaki");
+                stream.AddTrack("suzuki");
+                stream.AddTrack("harley");
+                stream.AddTrack("harley davidson");
+                stream.AddTrack("harleydavidson");
+                stream.AddTrack("dafra");
+                stream.AddTrack("bmw");
+
 
                 /*Cria um contador para visualizar no console a quantidade de registros coletados*/
                 Int64 count = 0;
