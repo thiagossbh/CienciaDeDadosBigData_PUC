@@ -1,43 +1,43 @@
 ## Coleta de dados do Twitter ##
-Trabalho pr·tico realizado para avaliar o conhecimento obtido na disciplina de Banco de Dados N„o Relacionais do curso de PÛs GraduaÁ„o em CiÍncia de dados e Big Data da PUC Minas.
+Trabalho pr√°tico realizado para avaliar o conhecimento obtido na disciplina de Banco de Dados N√£o Relacionais do curso de P√≥s Gradua√ß√£o em Ci√™ncia de dados e Big Data da PUC Minas.
 <br/>Professor: [Gabriel Coutinho](https://github.com/gcouti)
 <br/>
-### Miss„o: ###
-Coletar informaÁıes de redes sociais ou importar dados externos armazenando-os em um banco de dados NoSQL.
-Extrair InformaÁıes do tipo:
-<br/>ï	Termos mais frequentes.
-<br/>ï	Volume X dia.
-<br/>ï	Volume X hora do dia
+### Miss√£o: ###
+Coletar informa√ß√µes de redes sociais ou importar dados externos armazenando-os em um banco de dados NoSQL.
+Extrair Informa√ß√µes do tipo:
+<br/>‚Ä¢	Termos mais frequentes.
+<br/>‚Ä¢	Volume X dia.
+<br/>‚Ä¢	Volume X hora do dia
 <br/>
 ### Hardware: ###
-O trabalho foi realizado em um Notebook de domestico com a seguinte configuraÁ„o:
-<br/>ï	Processador Intel Core I7.
-<br/>ï	8GB de memÛria RAM DDR3.
-<br/>ï	1 TB de HD.
-<br/>ï	Windows 7 64 bits.
+O trabalho foi realizado em um Notebook de domestico com a seguinte configura√ß√£o:
+<br/>‚Ä¢	Processador Intel Core I7.
+<br/>‚Ä¢	8GB de mem√≥ria RAM DDR3.
+<br/>‚Ä¢	1 TB de HD.
+<br/>‚Ä¢	Windows 7 64 bits.
 <br/>
-### Contexto e aplicaÁ„o: ###
-O professor nos deu liberdade para escolher a fonte da informaÁ„o e o assunto.
-<br/>Optei por coletar dados do Twitter devido a facilidade em encontrar na web informaÁıes sobre a API.
+### Contexto e aplica√ß√£o: ###
+O professor nos deu liberdade para escolher a fonte da informa√ß√£o e o assunto.
+<br/>Optei por coletar dados do Twitter devido a facilidade em encontrar na web informa√ß√µes sobre a API.
 <br/>Sou apaixonado por motocicletas e por este motivo resolvi fazer uma busca de assuntos relacionados a motos, utilizando como palavras chave:
-<br/> ìmotoî, ìmotocicletaî, ìmotociclistaî, ìmotoboyî, ìviagem de motoî, e tambÈm as marcas ìHondaî, ìYamahaî, ìkawasakiî, ìSuzukiî, ìharleyî, ìharley Davidsonî, ìharleydavidsonî, ìdafraî e ìBMWî.
+<br/> ‚Äúmoto‚Äù, ‚Äúmotocicleta‚Äù, ‚Äúmotociclista‚Äù, ‚Äúmotoboy‚Äù, ‚Äúviagem de moto‚Äù, e tamb√©m as marcas ‚ÄúHonda‚Äù, ‚ÄúYamaha‚Äù, ‚Äúkawasaki‚Äù, ‚ÄúSuzuki‚Äù, ‚Äúharley‚Äù, ‚Äúharley Davidson‚Äù, ‚Äúharleydavidson‚Äù, ‚Äúdafra‚Äù e ‚ÄúBMW‚Äù.
 <br/>
 ### Metodologia: ###
 Devido minha experiencia em C# utilizando o Visual Studio, optei por realizar a atividade da seguinte forma:
-<br/>ï Coleta dos dados utilizando o [Microsoft Visual Studio 2015](https://www.visualstudio.com/pt-br/vs/).
-<br/>ï Banco de dados [MongoDB](https://www.mongodb.com/).
-<br/>ï [Robomongo](https://robomongo.org/) para interagir com a base de dados MongoDB.
+<br/>‚Ä¢ Coleta dos dados utilizando o [Microsoft Visual Studio 2015](https://www.visualstudio.com/pt-br/vs/).
+<br/>‚Ä¢ Banco de dados [MongoDB](https://www.mongodb.com/).
+<br/>‚Ä¢ [Robomongo](https://robomongo.org/) para interagir com a base de dados MongoDB.
 <br/>
 ### Passo a passo: ###
 
 Utilizando o Microsoft Visual Studio 2015 criei um "Console Application" (File --> New Project --> ).
 <p align="center"><img src="Imagens/CriacaoConsole.png" /></p>
 <br/>
-ApÛs criar o projeto È necess·rio adicionar a sua soluÁ„o o [MongoDriver](https://www.nuget.org/packages/MongoDB.Driver) para que a aplicaÁ„o possa interagir com o servidor e o [Tweetinvi](https://tweetinvi.codeplex.com/) para coleta dos dados do Twitter.
-A adiÁ„o dos itens acima foi realizada atravÈs do [Nuget](https://marketplace.visualstudio.com/items?itemName=NuGetTeam.NuGetPackageManagerforVisualStudio2015) j· incorporado ao meu Visual Studio.
+Ap√≥s criar o projeto √© necess√°rio adicionar a sua solu√ß√£o o [MongoDriver](https://www.nuget.org/packages/MongoDB.Driver) para que a aplica√ß√£o possa interagir com o servidor e o [Tweetinvi](https://tweetinvi.codeplex.com/) para coleta dos dados do Twitter.
+A adi√ß√£o dos itens acima foi realizada atrav√©s do [Nuget](https://marketplace.visualstudio.com/items?itemName=NuGetTeam.NuGetPackageManagerforVisualStudio2015) j√° incorporado ao meu Visual Studio.
 <p align="center"><img src="Imagens/Nuget.png" /></p>
-<br/>ApÛs criar o aplicativo adicionei uma classe com o nome "twett" e adicionei o seguinte cÛdigo.
-```c#
+<br/>Ap√≥s criar o aplicativo adicionei uma classe com o nome "twett" e adicionei o seguinte c√≥digo.
+''c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -80,27 +80,27 @@ namespace ColetorTwitter_Console_CSh
 }
 
 ```
-<br/>A classe acima È responsavel por criar os objetos no formato Bson para envio ao banco de dados MongoDB.
-<br/>ApÛs a criaÁ„o da classe, volte em "Program.cs" e adicione o seguinte cÛdigo em "Class Program". 
-<br/>ï Obs.: Os dados para autenticaÁ„o no twitter devem ser obtidos na [p·gina para desenvolvedores](https://apps.twitter.com/) do twitter.
+<br/>A classe acima √© responsavel por criar os objetos no formato Bson para envio ao banco de dados MongoDB.
+<br/>Ap√≥s a cria√ß√£o da classe, volte em "Program.cs" e adicione o seguinte c√≥digo em "Class Program". 
+<br/>‚Ä¢ Obs.: Os dados para autentica√ß√£o no twitter devem ser obtidos na [p√°gina para desenvolvedores](https://apps.twitter.com/) do twitter.
 ```c#
 static void Main()
 {
 	try
 	{
-		/*Dados para autenticaÁ„o no twitter*/
+		/*Dados para autentica√ß√£o no twitter*/
 		string consumerKey = "add";
 		string consumerSecret = "add";
 		string userAccessToken = "add";
 		string userAccessTokenSecret = "add";
 		Auth.SetUserCredentials(consumerKey, consumerSecret, userAccessToken, userAccessTokenSecret);
 
-		/*Nome do servidor, base e coleÁ„o do MongoDB onde os dados ser„o armazenados*/
+		/*Nome do servidor, base e cole√ß√£o do MongoDB onde os dados ser√£o armazenados*/
 		string serverMongo = "localhost";
 		string dbMongo = "db_twitter";
 		string collectionsMongo = "twett";
 
-		/*Dados para autenticaÁ„o no MongoDB e leitura dos dados no formato da classe "twett"*/
+		/*Dados para autentica√ß√£o no MongoDB e leitura dos dados no formato da classe "twett"*/
 		string conn_mongo = "mongodb://" + serverMongo + "/";
 		var client = new MongoClient(conn_mongo);
 		var db = client.GetDatabase(dbMongo);
@@ -109,7 +109,7 @@ static void Main()
 		/*Coletor de dados do twitter*/
 		var stream = Stream.CreateFilteredStream();
 
-		/*AdiÁ„o das plavras chave para busca dos twetts*/
+		/*Adi√ß√£o das plavras chave para busca dos twetts*/
 		stream.AddTrack("moto");
 		stream.AddTrack("motocicleta");
 		stream.AddTrack("motociclista");
@@ -131,11 +131,11 @@ static void Main()
 		/*Coleta o twett e salva no MongoDB*/
 		stream.MatchingTweetReceived += (sender, args) =>
 		{
-			/*Incrementa o valor do contador a cada execuÁ„o*/
+			/*Incrementa o valor do contador a cada execu√ß√£o*/
 			count++;
 			//Linha abaixo exibe dados do twett no console
-			//Console.WriteLine("Tweet n∫ {0}:\n{1}\n\n", count.ToString("0000000"), args.Tweet);
-			//Linha abaixo exibe apenas o numero no console, fica a escolha de cada um a forma de exibir a informaÁ„o no console.
+			//Console.WriteLine("Tweet n¬∫ {0}:\n{1}\n\n", count.ToString("0000000"), args.Tweet);
+			//Linha abaixo exibe apenas o numero no console, fica a escolha de cada um a forma de exibir a informa√ß√£o no console.
 			Console.WriteLine(count.ToString());
 			//Salva o twett
 			col.InsertOne(new twett(args.Tweet.CreatedAt, args.Tweet.IdStr, args.Tweet.Text, args.Tweet.Language.ToString()));
@@ -154,19 +154,19 @@ static void Main()
 }
 ```
 <br/>
-Feito os passos acima, basta iniciar a aplicaÁ„o para coletar os dados do Twitter. Abaixo um print do console em execuÁ„o.
+Feito os passos acima, basta iniciar a aplica√ß√£o para coletar os dados do Twitter. Abaixo um print do console em execu√ß√£o.
 <p align="center"><img src="Imagens/Executando.png" /></p>
 <br/>Iniciei a coleta no dia 18/12/2016 as 22:14 e finalizei no dia 23/12/2016 as 08:50 (Data e hora em GMT 0) coletando 452.773 registros.
 
 
-### Resultados: Tempo de execuÁ„o das consultas, informaÁıes extraÌdas. ###
+### Resultados: Tempo de execu√ß√£o das consultas, informa√ß√µes extra√≠das. ###
 <br/>Utilizando o [Robomongo](https://robomongo.org/) vamos visualizar alguns dados em nossa base.
-#### A utilizaÁ„o do Robomongo È opcional, todos os cÛdigos aqui citados podem ser utilizados em qualquer IDE para interaÁ„o com o MongoDB, inclusive via prompt de comando.
-<br/>Visualizar a quantidade de registros na coleÁ„o.
+#### A utiliza√ß√£o do Robomongo √© opcional, todos os c√≥digos aqui citados podem ser utilizados em qualquer IDE para intera√ß√£o com o MongoDB, inclusive via prompt de comando.
+<br/>Visualizar a quantidade de registros na cole√ß√£o.
 ```
-//Usado para acessar a mesma base que a aplicaÁ„o armazenou os dados
+//Usado para acessar a mesma base que a aplica√ß√£o armazenou os dados
 use db_twitter
-//Faz a contagem de registros (Documentos) na coleÁ„o twett
+//Faz a contagem de registros (Documentos) na cole√ß√£o twett
 db.twett.count()
 ```
 <p align="center"><img src="Imagens/QtdTotal.png" /></p>
@@ -184,7 +184,7 @@ db.twett.aggregate([
 ```
 <p align="center"><img src="Imagens/QtdPorData.png" /></p>
 ```
-<br/>Que tal detalharmos ainda mais os dados do dia? Vamos ver os hor·rios com maior volume.
+<br/>Que tal detalharmos ainda mais os dados do dia? Vamos ver os hor√°rios com maior volume.
 ```
 db.twett.aggregate([
                     {
@@ -197,7 +197,7 @@ db.twett.aggregate([
 ```
 <p align="center"><img src="Imagens/QtdPorHoraDoDia.png" /></p>
 <br/>Vamos aprofundar um pouco mais. Que tal sabermos quais as palavras mais utilizadas?
-<br/> Para fazer a busca de palavras iremos utilizar o Map Reduce dentro do prÛprio MongoDB.
+<br/> Para fazer a busca de palavras iremos utilizar o Map Reduce dentro do pr√≥prio MongoDB.
 ```Javascript
 //Comanda para limpar os dados da collection "contagemPalavras"
 db.contagemPalavras.remove({});
@@ -206,10 +206,10 @@ var map = function()
 {  
     //Define stopwords, ou seja, as palavras que devem ser desconsideradas.
     var stopwords = "rt,a,e,i,o,u,de,to,-,in,la,en,for,the,is,me,no,and,y,que,of,el,un,new,on".replace(" ","").split(',');
-    //Pega o conteudo do tweet e separa as palavras por espaÁo
+    //Pega o conteudo do tweet e separa as palavras por espa√ßo
     var words = this.text.toLowerCase().split(" ");
     
-    //FunÁ„o para eliminar as stopwords
+    //Fun√ß√£o para eliminar as stopwords
     var contains = function()
     {
         for(var j=0; j<stopwords.length; j++)
@@ -218,16 +218,16 @@ var map = function()
                 return false;
      };
  
-    //FunÁ„o que faz a leitura de todas as palavras e incrementa + 1 a cada vez que a mesma palavra È encontrada. 
+    //Fun√ß√£o que faz a leitura de todas as palavras e incrementa + 1 a cada vez que a mesma palavra √© encontrada. 
     for (var i = 0; i < words.length -1; i++)
         {
-            //A parte  "&& !contains()" do if chama a funÁ„o de remoÁ„o das stopwords, removendo esta parte veremos todas as palavras.
+            //A parte  "&& !contains()" do if chama a fun√ß√£o de remo√ß√£o das stopwords, removendo esta parte veremos todas as palavras.
             if (words[i] != "" && !contains())
             emit(words[i], 1);
         }    
 };
     
-//FunÁ„o para reduce.
+//Fun√ß√£o para reduce.
 var reduce = function (key, value)
 {
     return Array.sum(value);
@@ -248,11 +248,11 @@ var result = db.twett.mapReduce(
 db.contagemPalavras.find().sort({value : -1},{"allowDiskUse" : true});
 ```
 <p align="center"><img src="Imagens/ContagemDePalavras.png" /></p>
-<br/>  Note que no print acima temos apenas os primeiros registros no entanto a consulta traz uma quantidade bem maior de informaÁıes.
+<br/>  Note que no print acima temos apenas os primeiros registros no entanto a consulta traz uma quantidade bem maior de informa√ß√µes.
 <br/>
-### Conclusıes: ConsideraÁıes sobre o trabalho ###
-<br/>A evoluÁ„o tecnolÛgica tem ajudado muito a humanidade, e a cada dia temos um numero maior de informaÁıes saindo do padr„o ìNormalizadoî tornando necess·rio a utilizaÁ„o de bases de dados NoSQL, mas vale lembrar que nem sempre o NoSQL ser· a melhor opÁ„o. … necess·rio fazer uma analise previa da necessidade do negocio e a partir de tal analise decidir  o melhor banco de dados a se utilizar.
-<br/>Como foi possÌvel ver nos exemplos acima, analises muito complexas podem ser realizadas em uma velocidade muita r·pida nos bancos NoSQL, funÁıes como a contagem de palavras aqui exemplificada demoram muito mais tempo para processar em uma base de dados relacional.
-<br/>Vimos tambÈm que as empresas possuem um poder analÌtico gigantesco sobre o que est· acontecendo nas redes sociais, com apenas algumas linhas de cÛdigo È possÌvel responder perguntas do tipo ìO que andam falando da minha empresa?î, ou atÈ mesmo analisar o que se fala da politica, de alguma tragÈdia, etc.
-<br/>Um ponto de extrema import‚ncia para as analises realizadas È entender a necessidade do negocio, no exemplo praticado por mim a intenÁ„o foi responder a pergunta "o que mais se fala sobre motos?" Vimos que a palavra mais utilizada foi ìmotoî no entanto se fizermos uma analise mais profunda nos dados ser· possÌvel ver que parte consider·vel da palavra ìmotoî foi utilizada para fazer referencia ao celular da fabricante Motorola.
-<br/>Em resumo. Temos um grande poder nas m„os mas precisamos saber utiliza-lo pois uma analise mal feita pode levar a decisıes erradas dentro de uma corporaÁ„o.
+### Conclus√µes: Considera√ß√µes sobre o trabalho ###
+<br/>A evolu√ß√£o tecnol√≥gica tem ajudado muito a humanidade, e a cada dia temos um numero maior de informa√ß√µes saindo do padr√£o ‚ÄúNormalizado‚Äù tornando necess√°rio a utiliza√ß√£o de bases de dados NoSQL, mas vale lembrar que nem sempre o NoSQL ser√° a melhor op√ß√£o. √â necess√°rio fazer uma analise previa da necessidade do negocio e a partir de tal analise decidir  o melhor banco de dados a se utilizar.
+<br/>Como foi poss√≠vel ver nos exemplos acima, analises muito complexas podem ser realizadas em uma velocidade muita r√°pida nos bancos NoSQL, fun√ß√µes como a contagem de palavras aqui exemplificada demoram muito mais tempo para processar em uma base de dados relacional.
+<br/>Vimos tamb√©m que as empresas possuem um poder anal√≠tico gigantesco sobre o que est√° acontecendo nas redes sociais, com apenas algumas linhas de c√≥digo √© poss√≠vel responder perguntas do tipo ‚ÄúO que andam falando da minha empresa?‚Äù, ou at√© mesmo analisar o que se fala da politica, de alguma trag√©dia, etc.
+<br/>Um ponto de extrema import√¢ncia para as analises realizadas √© entender a necessidade do negocio, no exemplo praticado por mim a inten√ß√£o foi responder a pergunta "o que mais se fala sobre motos?" Vimos que a palavra mais utilizada foi ‚Äúmoto‚Äù no entanto se fizermos uma analise mais profunda nos dados ser√° poss√≠vel ver que parte consider√°vel da palavra ‚Äúmoto‚Äù foi utilizada para fazer referencia ao celular da fabricante Motorola.
+<br/>Em resumo. Temos um grande poder nas m√£os mas precisamos saber utiliza-lo pois uma analise mal feita pode levar a decis√µes erradas dentro de uma corpora√ß√£o.
